@@ -16,7 +16,7 @@ public class Atividade {
 		
 		switch(num1) {
 		case 1:
-			System.out.println("Dia da semana é Domingo");
+			System.out.println("Dia da semana é  Domingo");
 
 		case 2:
 			System.out.println("Dia da semana é Segunda");
