@@ -1,0 +1,91 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch formula",
+            "request": "launch",
+            "mainClass": "formula",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch caracteres",
+            "request": "launch",
+            "mainClass": "caracteres",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Atividade",
+            "request": "launch",
+            "mainClass": "Atividade",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Atividade2",
+            "request": "launch",
+            "mainClass": "Atividade2",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Atividade3",
+            "request": "launch",
+            "mainClass": "Atividade3",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Atividade4",
+            "request": "launch",
+            "mainClass": "Atividade4",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Atividade5",
+            "request": "launch",
+            "mainClass": "Atividade5",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch doisNumeros",
+            "request": "launch",
+            "mainClass": "doisNumeros",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch fatorial",
+            "request": "launch",
+            "mainClass": "fatorial",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch prestacoes",
+            "request": "launch",
+            "mainClass": "prestacoes",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
+            "name": "Launch tabuada",
+            "request": "launch",
+            "mainClass": "tabuada",
+            "projectName": "Faculdade_901401bc"
+        }
+    ]
+}

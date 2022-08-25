@@ -1,4 +1,3 @@
-package atividade_maicon_rev01;
 
 import java.util.Scanner;
 
