@@ -1,0 +1,9 @@
+1- a) Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto. Ela é formada por dados e comportamentos.
+
+b) Um objeto é um elemento computacional que representa, no domínio da solução, alguma entidade (abstrata ou concreta) do domínio de interesse do problema sob análise. Objetos similares são agrupados em classes. No paradigma de orientação a objetos, tudo pode ser potencialmente representado como um objeto.
+
+c) Um construtor é um método utilizado por uma classe para criar objetos dela. Em linguagens orientadas a objetos, se um construtor não for definido pelo desenvolvedor, um construtor padrão é automaticamente incluído quando a classe é compilada.
+
+d) Os modificadores de acesso são elementos de fundamental importância na Programação Orientada a Objetos. Trata-se de palavras reservadas da linguagem de programação que determinam a forma de acesso a atributos e métodos de uma classe.
+
+2- A diferença é que o Friendly so acontece dentro do Package
