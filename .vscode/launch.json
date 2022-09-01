@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
             "name": "Launch formula",
             "request": "launch",
             "mainClass": "formula",
