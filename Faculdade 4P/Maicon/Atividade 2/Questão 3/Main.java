@@ -3,6 +3,7 @@ public class Main {
   public static void main(String[] args) {
     Monitorss um = new Monitorss();
     Scanner entradaOP = new Scanner(System.in);
+    Scanner entradaString = new Scanner(System.in);
     String exibe = "";
     int op = 0;
     do {
@@ -10,10 +11,10 @@ public class Main {
       System.out.println("1- Cadastrar monitor");
       System.out.println("2- Exibir dados do Monitor");
       System.out.println("3- Imprimir algo na tela");
-      System.out.println("4- Sair");
+      System.out.println("0- Sair");
       op = entradaOP.nextInt();
-      if (op > 3 || op < 1) {
-        System.out.println("Informe dentres as opções 1 2 3");
+      if (op > 3 || op < 0) {
+        System.out.println("Informe dentres as opções 1 2 3 0");
       }
       switch (op) {
         case 1:
@@ -24,10 +25,10 @@ public class Main {
         break;
         case 3:
         System.out.print("Informe o que quer exibir-> ");
-        exibe = entradaOP.nextLine();
+        exibe = entradaString.nextLine();
         um.imprimeNomeMonitor(exibe);
         break;
       }  
-    } while (op > 3 || op < 1);
+    } while (op != 0);
   }
 }
