@@ -32,19 +32,20 @@ public class Carro {
         this.ano = entrada.nextInt();
     
     
-        System.out.print("Informe quantas Cilidradas da Carro -> ");
+        System.out.print("Informe quantas Cavalos da Carro -> ");
         this.cavalos = entrada.nextInt();
     
         System.out.print("Informe quantos Litros cabe nesta Carro -> ");
         this.tamTank = entrada.nextInt();
     
-    
+        System.out.println("===========================================================\n");
       }
       public void exibeCarro(){
         System.out.println("Marca -> " + this.marca);
         System.out.println("Modelo -> " + this.modelo );
         System.out.println("Ano -> " + this.ano );
-        System.out.println("cavalos -> " + this.cavalos );
+        System.out.println("Cavalos -> " + this.cavalos );
         System.out.println("Tamanho do Tanque -> " + this.tamTank );
+        System.out.println("===========================================================\n");
       }
 }

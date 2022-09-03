@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class MainM {
   public static void main(String[] args) {
     Motocicleta moto = new Motocicleta();
     Carro automovel = new Carro();

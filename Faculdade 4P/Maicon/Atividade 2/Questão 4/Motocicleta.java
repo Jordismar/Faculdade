@@ -23,7 +23,7 @@ public class Motocicleta {
         System.out.println("Preenchendo os dados do Motocicleta\n");
         System.out.print("Informe a Marca da Motocicleta -> ");
         this.marca = entrada.nextLine();
-    
+        
         System.out.print("Informe o Modelo da Motocicleta -> ");
         clearBuffer(entrada);
         this.modelo = entrada.nextLine();
@@ -38,7 +38,7 @@ public class Motocicleta {
         System.out.print("Informe quantos Litros cabe nesta Motocicleta -> ");
         this.tamTank = entrada.nextInt();
     
-    
+        System.out.println("===========================================================\n");
       }
       public void exibeMotocicleta(){
         System.out.println("Marca -> " + this.marca);
@@ -46,6 +46,7 @@ public class Motocicleta {
         System.out.println("Ano -> " + this.ano );
         System.out.println("Cilindradas -> " + this.cilindradas );
         System.out.println("Tamanho do Tanque -> " + this.tamTank );
+        System.out.println("===========================================================\n");
       }
       public void vrum(){
         System.out.println("|-----------------------------|");
@@ -56,5 +57,7 @@ public class Motocicleta {
         System.out.println("|                             |");
         System.out.println("|                             |");
         System.out.println("|-----------------------------|");
+
+        System.out.println("===========================================================\n");
       }
 }
