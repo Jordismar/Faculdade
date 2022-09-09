@@ -6,8 +6,8 @@ public class vetorView {
         System.out.print("Informe o tamanho do vetor -> ");
         tamVet = entradaQuant.nextInt();
 
-        vetor vet = new vetor(tamVet);
-        vet.preencheVetor();
-        vet.imprimeVetor();
+        vetor veto = new vetor(tamVet);
+        veto.preencheVetor();
+        veto.imprimeVetor();
     }
 }
