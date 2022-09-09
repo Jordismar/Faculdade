@@ -1,10 +1,15 @@
 import java.util.Scanner;
 import java.util.Random;
-public class vetor {
+public class Vetor {
+    private int vet;
+    private Scanner entrada;
     
-    public vetor(int tamVet){
-        int vet[] = new int[tamVet];
-        Scanner entrada = new Scanner(System.in);
+    public Vetor(int tamVet){
+        this.vet[] = new int[tamVet];
+        for(int i = 0; i< tamVet; i++){
+            this.vet[i] = 0;
+        }
+        this.entrada = new Scanner(System.in);
     }
 
     public void preencheVetor(int tamVet){
@@ -12,6 +17,10 @@ public class vetor {
         for (int i = 0; i < tamVet; i++) {
             this.vet[i] = rand.nextInt(tamVet);
         }
+    }
+
+    public int getVetor(){
+        return this.vet;
     }
 
     public void imprimeVetor(int tamVet){
