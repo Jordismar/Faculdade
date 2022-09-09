@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch vetorView",
+            "request": "launch",
+            "mainClass": "vetorView",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
             "name": "Launch MainI",
             "request": "launch",
             "mainClass": "MainI",
