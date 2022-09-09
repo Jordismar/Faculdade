@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class AgendaView {
   public static void main(String[] args) {
     int op = 0;
-    int quant = 0;
+    
     Scanner entradaOp = new Scanner(System.in);
-    Agenda agend = new Agenda(quant);
+    Agenda agend = new Agenda();
     do {
+      System.out.println("IMPORTANTE - UMA AGENDA CABE ATE 30 PESSOAS");
       System.out.println("1-Adicionar nova Pessoa a Agenda");
       System.out.println("2-Imprimir Agenda completa");
       System.out.println("0-Sair");
@@ -15,8 +16,7 @@ public class AgendaView {
 
       switch (op) {
         case 1:
-          agend.newPessoa(quant);
-          quant++;
+        agend.newPessoa();
           break;
         case 2:
           // agend.imprimeAgenda();

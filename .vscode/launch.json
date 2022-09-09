@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AgendaView",
+            "request": "launch",
+            "mainClass": "AgendaView",
+            "projectName": "Faculdade_901401bc"
+        },
+        {
+            "type": "java",
             "name": "Launch Atividade",
             "request": "launch",
             "mainClass": "Atividade",

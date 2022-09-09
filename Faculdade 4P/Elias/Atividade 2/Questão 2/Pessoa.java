@@ -3,26 +3,31 @@ import java.util.Scanner;
 public class Pessoa {
   public String nome;
   public int idade;
-  public boolean cadastrada;
-  public Scanner entrada = new Scanner(System.in);
-
-  public Pessoa() {
-    this.nome = "";
-    this.idade = 0;
-    this.cadastrada = false;
+ // public boolean cadastrada;
+ 
+ public Pessoa(){
+   this.nome = "";
+   this.idade = 0;
+   // this.cadastrada = false;
   }
-
-  public void cadastraPessoa() {
+  private static void clearBuffer(Scanner scanner) {
+    if (scanner.hasNextLine()) {
+        scanner.nextLine();
+    }
+  }
+  public void cadastraPessoa(){
+    Scanner entradaP = new Scanner(System.in);
     System.out.println("Nova pessoa:");
     System.out.println("\n");
     System.out.print("Nome -> ");
-    this.nome = entrada.nextLine();
+    clearBuffer(entradaP);
+    this.nome = entradaP.nextLine();
     System.out.print("Idade -> ");
-    this.idade = entrada.nextInt();
-    this.cadastrada = true;
+    this.idade = entradaP.nextInt();
+   // this.cadastrada = true;
   }
 
-  public void exibePessoa(int quant) {
+  public void exibePessoa() {
 
   }
 }

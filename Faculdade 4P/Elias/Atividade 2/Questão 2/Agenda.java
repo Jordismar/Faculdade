@@ -1,12 +1,13 @@
 public class Agenda {
-  public Pessoa[] p;
-
-  public Agenda(int quant) {
-    this.p = new Pessoa[quant];
-
+  public int posicao = 0;
+  public Pessoa[] p = new Pessoa[30];
+  public Agenda() {
+    
   }
-
-  public void newPessoa(int quant) {
-    this.p[quant].cadastraPessoa();
+  
+  public void newPessoa() {
+    System.out.println("teste");
+    p[this.posicao].cadastraPessoa();
+    this.posicao++;
   }
 }
