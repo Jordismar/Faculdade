@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Atividade",
+            "request": "launch",
+            "mainClass": "Atividade",
+            "projectName": "Faculdade_ca892b51"
+        },
+        {
+            "type": "java",
+            "name": "Launch AgendaView",
+            "request": "launch",
+            "mainClass": "AgendaView",
+            "projectName": "Faculdade_ca892b51"
+        },
+        {
+            "type": "java",
             "name": "Launch vetorView",
             "request": "launch",
             "mainClass": "vetorView",
