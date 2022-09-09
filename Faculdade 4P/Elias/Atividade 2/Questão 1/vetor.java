@@ -1,31 +1,31 @@
 import java.util.Scanner;
-import java.util.Random;
+
 public class Vetor {
-    private int vet;
+    private int[] vet;
     private Scanner entrada;
-    
-    public Vetor(int tamVet){
-        this.vet[] = new int[tamVet];
-        for(int i = 0; i< tamVet; i++){
+
+    public Vetor(int tamVet) {
+        this.vet = new int[tamVet];
+        for (int i = 0; i < tamVet; i++) {
             this.vet[i] = 0;
         }
         this.entrada = new Scanner(System.in);
     }
 
-    public void preencheVetor(int tamVet){
-        Random rand = new Random();
+    public void preencheVetor(int tamVet) {
         for (int i = 0; i < tamVet; i++) {
-            this.vet[i] = rand.nextInt(tamVet);
+            System.out.print("Informe o valor para o vetor[" + i + "] -> ");
+            this.vet[i] = entrada.nextInt();
         }
     }
 
-    public int getVetor(){
+    public int[] getVetor() {
         return this.vet;
     }
 
-    public void imprimeVetor(int tamVet){
+    public void imprimeVetor(int tamVet) {
         for (int i = 0; i < tamVet; i++) {
-            System.out.println("Posição ["+i+"] -> "+this.vet[i]);
+            System.out.println("Posição [" + i + "] -> " + this.vet[i]);
         }
     }
 }
