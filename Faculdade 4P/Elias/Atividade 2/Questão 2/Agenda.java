@@ -1,13 +1,19 @@
 public class Agenda {
-  public int posicao = 0;
-  public Pessoa[] p = new Pessoa[30];
-  public Agenda() {
-    
-  }
-  
-  public void newPessoa() {
-    System.out.println("teste");
-    p[this.posicao].cadastraPessoa();
-    this.posicao++;
-  }
+    private Pessoa[] vetor;
+
+    public Agenda(int tamVet){
+       vetor = new Pessoa[tamVet];
+    }
+    public Pessoa[] getVetor(){
+        return vetor;
+    }
+    public void setVetor(Pessoa p, int posi){
+        vetor[posi] = p;
+    }
+
+    public void imprimeVetor(){
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i].imprime();
+        }
+    }
 }

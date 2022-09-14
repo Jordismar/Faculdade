@@ -1,33 +1,42 @@
-import java.util.Scanner;
-
 public class Pessoa {
-  public String nome;
-  public int idade;
- // public boolean cadastrada;
- 
- public Pessoa(){
-   this.nome = "";
-   this.idade = 0;
-   // this.cadastrada = false;
-  }
-  private static void clearBuffer(Scanner scanner) {
-    if (scanner.hasNextLine()) {
-        scanner.nextLine();
+    private String nome;
+    private int idade;
+    private boolean cadastra;
+
+    public Pessoa(){
+        nome = "";
+        idade = 0;
+        cadastra = false;
     }
-  }
-  public void cadastraPessoa(){
-    Scanner entradaP = new Scanner(System.in);
-    System.out.println("Nova pessoa:");
-    System.out.println("\n");
-    System.out.print("Nome -> ");
-    clearBuffer(entradaP);
-    this.nome = entradaP.nextLine();
-    System.out.print("Idade -> ");
-    this.idade = entradaP.nextInt();
-   // this.cadastrada = true;
-  }
 
-  public void exibePessoa() {
+    public String getNome(){
+       return this.nome;
+    }
+    public int getIdade(){
+        return this.idade;
+    }
+    public boolean getCadastra(){
+        return this.cadastra;
+    }
+    public void setNome(String nome){
+         this.nome = nome;
+    }
+    public void setIdade(int idade){
+         this.idade = idade;
+    }
+    public void setCadastra(boolean cadastra){
+        this.cadastra = cadastra;
+    }
 
-  }
+    public void imprime(){
+        System.out.println("Nome -> "+ this.nome);
+        System.out.println("Idade -> "+ this.idade);
+        if (cadastra) {
+            System.out.println("Cadastrado");
+        }else{
+            System.out.println("Não cadastrado");
+        }
+
+    }
 }
+
