@@ -1,0 +1,44 @@
+1-a) Tipo abstrato de dados - é uma especificação de um conjunto
+    de dados e operações que podem ser executadas sobre esses
+    dados.
+
+b) Classe - é uma forma de definir um tipo de dado em uma 
+    linguagem orientada a objeto.
+
+c) Objeto - a palavra objeto refere-se a um "molde"/e, 
+    que passa a existir a partir de uma instância da classe
+
+d) Instância - e um objeto cujo comportamento e estado são 
+    definidos pela classe.
+
+e) Método - é uma sub-rotina que é executada por um objeto 
+    ao receber uma mensagem.
+
+f) Variável de instância - Variaveis que sao criadas e utilizadas no contexto da classe.
+
+g) Membros da classe -  Sao as variaveis da instancia e o metodos.
+
+h) Modificadores de acesso - São padrões de visibilidade de acesso às
+    classes, atributos e métodos
+
+i) Encapsulamento - Ajuda a ocultar a implementação de uma classe de seus clientes. Prática que reduz
+    defeitos e facilita as modificações no programa
+
+j) Pacote - Contêm um grupo de classes e interfaces relacionadas. Ajudam os programadores a administrarem a
+    complexidade dos componentes da aplicação.
+
+k) Construtor - Utilizado para a Inicialização de Objetos de Classe. Para especificar como objetos de uma classe
+    devem ser inicializados.
+
+l) Diagrama de classes - é uma representação da estrutura e relações das classes que servem de modelo para objetos.
+
+m) UML - é uma linguagem-padrão para a elaboração da estrutura de projetos de software.
+
+n) Herança - Permite criar novas classes com base em uma classe já existente. A herança é
+    aplicada para características e comportamentos de uma classe.
+
+2)  A programação orientada a objetos sinaliza para uma maneira mais apropriada de realizar a correta 
+    divisão de um programa em conceitos (classes), permitindo que cada classe centralize em si todos os 
+    dados relativos ao conceito que ela representa, além de reunir todas as funcionalidades que pertencem a ela.
+    É uma forma de programação de computadores que preconiza que todos os programas possíveis podem ser 
+    reduzidos a apenas três estruturas: sequência, decisão e iteração (repetição)
