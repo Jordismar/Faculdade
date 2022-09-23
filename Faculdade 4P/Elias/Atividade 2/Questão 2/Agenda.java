@@ -1,13 +1,13 @@
 public class Agenda {
-    private Pessoa[] vetor;
+    private Pessoa2[] vetor;
 
     public Agenda(int tamVet){
-       vetor = new Pessoa[tamVet];
+       vetor = new Pessoa2[tamVet];
     }
-    public Pessoa[] getVetor(){
+    public Pessoa2[] getVetor(){
         return vetor;
     }
-    public void setVetor(Pessoa p, int posi){
+    public void setVetor(Pessoa2 p, int posi){
         vetor[posi] = p;
     }
 
