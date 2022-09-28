@@ -9,7 +9,9 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
         do {
+            System.out.println("\n");
             System.out.println("Canal Atual -> " + tv.getCanal() + " Com " + tv.getVolume() + " Volume atual");
+            System.out.print("\n");
             System.out.println("Selecione a opção que deseja executar");
             System.out.println("1- Aumentar Volume");
             System.out.println("2- Diminuir Volume");
@@ -27,6 +29,7 @@ public class Main {
                         System.out.println("Aumentando...");
                         controle.aumentarVolume(tv);
                     }
+                    System.out.println("\n");
                     break;
                 case 2:
                     if (tv.getVolume() == 0) {
@@ -35,6 +38,7 @@ public class Main {
                         System.out.println("Diminuindo...");
                         controle.diminuirVolume(tv);
                     }
+                    System.out.println("\n");
                     break;
                 case 3:
                     if (tv.getCanal() == 100) {
@@ -43,6 +47,7 @@ public class Main {
                         System.out.println("Aumentando...");
                         controle.aumentarCanal(tv);
                     }
+                    System.out.println("\n");
                     break;
                 case 4:
                     if (tv.getCanal() == 1) {
@@ -51,13 +56,9 @@ public class Main {
                         System.out.println("Diminuindo...");
                         controle.diminuirCanal(tv);
                     }
-                    break;
-                default:
-                    System.out.println("=========================");
-                    System.out.println("Selecione Corretamente");
-                    System.out.println("=========================");
                     System.out.println("\n");
                     break;
+
             }
         } while (op != 0);
     }
