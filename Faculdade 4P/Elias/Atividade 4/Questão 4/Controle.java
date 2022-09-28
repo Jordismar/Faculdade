@@ -16,12 +16,23 @@ public class Controle {
         tv.setVolume(this.volume);
     }
 
+    public void diminuirVolume(TV tv) {
+        this.volume--;
+        tv.setVolume(this.volume);
+    }
+
     public int getCanal() {
         return canal;
     }
 
-    public void setCanal(int canal) {
-        this.canal = canal;
+    public void aumentarCanal(TV tv) {
+        this.canal++;
+        tv.setCanal(this.canal);
+    }
+
+    public void diminuirCanal(TV tv) {
+        this.canal--;
+        tv.setCanal(this.canal);
     }
 
 }

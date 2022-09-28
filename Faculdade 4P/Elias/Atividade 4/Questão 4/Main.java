@@ -9,9 +9,7 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
         do {
-            System.out.println(
-                    "Canal Atual -> " + tv.getCanal() + " Com " + tv.getVolume()
-                            + " Volume atual");
+            System.out.println("Canal Atual -> " + tv.getCanal() + " Com " + tv.getVolume() + " Volume atual");
             System.out.println("Selecione a opção que deseja executar");
             System.out.println("1- Aumentar Volume");
             System.out.println("2- Diminuir Volume");
@@ -31,27 +29,27 @@ public class Main {
                     }
                     break;
                 case 2:
-                    if (elevador.getAndar() == 0) {
-                        System.out.println("Você já esta no Terreo");
+                    if (tv.getVolume() == 0) {
+                        System.out.println("Volume já esta no minimo");
                     } else {
-                        System.out.println("Descendo...");
-                        elevador.diminuiAndar();
+                        System.out.println("Diminuindo...");
+                        controle.diminuirVolume(tv);
                     }
                     break;
                 case 3:
-                    if (elevador.getQuantPessoa() == elevador.getLota()) {
-                        System.out.println("Esta lotado");
+                    if (tv.getCanal() == 100) {
+                        System.out.println("Ultimo Canal disponivel");
                     } else {
-                        System.out.println("Adicionando...");
-                        elevador.aumentarQuantPessoa();
+                        System.out.println("Aumentando...");
+                        controle.aumentarCanal(tv);
                     }
                     break;
                 case 4:
-                    if (elevador.getQuantPessoa() == 0) {
-                        System.out.println("O elevador esta vazio");
+                    if (tv.getCanal() == 1) {
+                        System.out.println("Primeiro Canal");
                     } else {
-                        System.out.println("Saindo...");
-                        elevador.diminuiQuantPessoa();
+                        System.out.println("Diminuindo...");
+                        controle.diminuirCanal(tv);
                     }
                     break;
                 default:

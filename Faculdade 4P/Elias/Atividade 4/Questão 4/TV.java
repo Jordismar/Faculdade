@@ -3,7 +3,7 @@ public class TV {
     private int volume;
 
     public TV() {
-        this.canal = 0;
+        this.canal = 1;
         this.volume = 0;
     }
 
