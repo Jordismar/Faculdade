@@ -13,6 +13,7 @@ public class Main {
             System.out.println("3- Remover a primeira Música");
             System.out.println("4- Imprimir lista completa de Músicas");
             System.out.println("0- Sair");
+            System.out.print("Selecione-> ");
             op = entrada.nextInt();
             entrada.nextLine();
             System.out.print("\n");
@@ -23,15 +24,21 @@ public class Main {
                     musica.add(entrada.nextLine());
                     break;
                 case 2:
-                    System.out.println("A primeira musica é " + musica.get(0));
+                    for (String m : musica) {
+                        System.out.println("A primeira musica é -> " + m);
+                        break;
+                    }
                     break;
                 case 3:
-                    System.out.println("Removendo a musica " + musica.get(0));
-                    musica.remove(args)
+                    for (String m : musica) {
+                        System.out.println("Removendo a musica -> " + m);
+                        musica.remove(m);
+                        break;
+                    }
                     break;
                 case 4:
-                    for (String string : musica) {
-                        System.out.println("Musica -> "+ string);
+                    for (String m : musica) {
+                        System.out.println("Musica -> " + m);
                     }
                     break;
 

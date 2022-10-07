@@ -1,0 +1,5 @@
+a)Em um ArrayList os elementos podem ser adicionados e removidos sempre que você quiser. Diferente de um array embutido e um ArrayListem Java, é que o tamanho de um array não pode ser modificado (se você quiser adicionar ou remover elementos de/para um array, você tem que criar um novo)
+
+b)Um HashSet é uma coleção de itens onde cada item é único
+
+c) No ArrayList, você armazenam itens como uma coleção ordenada, e você deve acessá-los com um número de índice. A HashMap, no entanto, armazena itens em pares " chave / valor ", e você pode acessá-los por um índice de outro tipo (por exemplo, a String).
