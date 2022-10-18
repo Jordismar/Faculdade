@@ -2,15 +2,9 @@ import java.util.HashMap;
 
 public class Contas {
     private float saldo;
-    private int nConta = 0;
-    private HashMap<Integer, ContaCorrente> contaCorrente;
-    private HashMap<Integer, ContaPoupanca> contaPoupanca;
 
     public Contas() {
         saldo = 0;
-        nConta++;
-        contaCorrente = new HashMap<Integer, ContaCorrente>();
-        contaPoupanca = new HashMap<Integer, ContaPoupanca>();
     }
 
     public int getnConta() {
