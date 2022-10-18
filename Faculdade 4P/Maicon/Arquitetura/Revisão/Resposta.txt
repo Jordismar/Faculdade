@@ -1,0 +1,7 @@
+1- Embora limite sua capacidade, a versão 32 bits do Windows suporta um processador 64, mas a versão 64 não funciona com um processador de 32 bits.
+
+2- 
+
+3- A diferença básica é que DRAM é uma sucessora da SRAM. Os projetistas de memória reduziram o número de elementos por bit, menos transistores, assim economizaram área do chip para criar a DRAM. Como resultado, a produção de DRAM é mais barata do que a SRAM.
+
+4- Combinacionais são definidos como os circuitos independentes de tempo que não dependem de entradas anteriores para gerar qualquer saída são chamados de circuitos combinacionais. Os circuitos sequenciais são aqueles que dependem de ciclos de clock e dependem de entradas presentes e passadas para gerar qualquer saída.
