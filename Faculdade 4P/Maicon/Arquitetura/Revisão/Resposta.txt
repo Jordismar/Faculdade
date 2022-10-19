@@ -1,6 +1,6 @@
 1- Embora limite sua capacidade, a versão 32 bits do Windows suporta um processador 64, mas a versão 64 não funciona com um processador de 32 bits.
 
-2- 
+2- Os ultimos 6 bits daas intruções tipo R tambem chamados de funct aciona uma logica qe diferencia das demais.
 
 3- A diferença básica é que DRAM é uma sucessora da SRAM. Os projetistas de memória reduziram o número de elementos por bit, menos transistores, assim economizaram área do chip para criar a DRAM. Como resultado, a produção de DRAM é mais barata do que a SRAM.
 
