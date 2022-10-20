@@ -1,39 +1,64 @@
 import java.util.HashMap;
 
 public class Banco {
-    private Contas contas;
-    private HashMap<Integer, Contas> cont;
     private int nConta;
+    private Contas conta;
+    private Contas conta2;
+    private float valor;
+    private HashMap<Integer, Contas> banco = new HashMap<Integer, Contas>();
 
-    
     public Banco() {
-        cont = new HashMap<Integer, Contas>();
-        nConta = 0;
-    }
-    
-    public int novaConta(Contas conta) {
-        nConta++;
-        cont.put(nConta, conta);
-        return nConta;
-    }
-    
-    public int getnConta() {
-        return nConta;
+        this.nConta = 1;
     }
 
-    public float saldo(int nConta){
-        contas = cont.get(nConta);
-        return contas.getSaldo();
+    public int criarConta(Contas conta) {
+        int aux = this.nConta;
 
+        banco.put(nConta, conta);
+
+        this.nConta += 1;
+
+        return aux;
     }
-    public void Deposito(float deposito, int nConta) {
 
-        this.saldo = this.saldo + deposito;
-        System.out.println(this.saldo);
+    public void saldoConta(int nConta) {
+        conta = banco.get(nConta);
+        System.out.println("Seu saldo-> " + conta.getSaldo());
     }
 
-    public void Sacar(float requisitado) {
-        this.saldo = this.saldo - requisitado;
-        System.out.println(this.saldo);
+    public void transferir(int nConta, float valor, int nContaTransferencia) {
+        conta = banco.get(nConta);
+        conta2 = banco.get(nContaTransferencia);
+        conta.transferir(valor, conta2);
+        banco.put(nConta, conta);
+        banco.put(nContaTransferencia, conta2);
+    }
+
+    public void sacar(int nConta, float valor) {
+        conta = banco.get(nConta);
+        this.valor = conta.sacar(valor);
+        banco.put(nConta, conta);
+        System.out.println("Valor de saque-> " + this.valor);
+    }
+
+    public void depositar(int nConta, float valor) {
+        conta = banco.get(nConta);
+        this.valor = conta.depositar(valor);
+        banco.put(nConta, conta);
+        System.out.println("Valor de deposito-> " + this.valor);
+    }
+
+    public void render(int nConta) {
+        conta = banco.get(nConta);
+        conta.render();
+        banco.put(nConta, conta);
+    }
+
+    public void exibirSaldoContas() {
+        for (int nConta : banco.keySet()) {
+            System.out.println("Conta-> " + nConta);
+            System.out.println("Saldo Anterior-> " + banco.get(nConta).getSaldoAnterior());
+            System.out.println("Saldo Atual-> " + banco.get(nConta).getSaldo());
+        }
     }
 }

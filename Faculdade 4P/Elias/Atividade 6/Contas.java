@@ -1,33 +1,54 @@
-import java.util.HashMap;
-
 public class Contas {
-    private float saldo;
+    protected float saldo;
+    protected float saldoAnterior;
+    protected float taxaServico;
 
-    public Contas() {
-        saldo = 0;
+    public Contas(float taxaServico) {
+        this.saldo = 0;
+        this.taxaServico = taxaServico;
     }
 
-    public int getnConta() {
-        return nConta;
+    protected void render() {
+        System.out.println("Permitido somente para Contas Poupança.");
     }
 
-    public float getSaldo() {
-        return saldo;
+    protected float depositar(float valor) {
+        this.saldoAnterior = this.saldo;
+        this.saldo = valor;
+        return valor;
     }
 
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
+    protected float sacar(float valor) {
+        this.saldoAnterior = this.saldo;
+        if (valor > this.saldo) {
+            System.out.println("Saldo Insuficiente.");
+            return 0;
+        }
+
+        this.saldo -= valor;
+
+        return valor;
     }
 
-    public void Deposito(float deposito, int nConta) {
+    protected void transferir(float valor, Contas conta) {
+        float tranferencia;
+        this.saldoAnterior = this.saldo;
+        tranferencia = this.sacar(valor);
 
-        this.saldo = this.saldo + deposito;
-        System.out.println(this.saldo);
+        if (tranferencia == 0) {
+            System.out.println("Erro na transferencia.");
+            return;
+        }
+
+        conta.depositar(tranferencia);
+        System.out.println("Transferencia Concluida-> Valor " + tranferencia);
     }
 
-    public void Sacar(float requisitado) {
-        this.saldo = this.saldo - requisitado;
-        System.out.println(this.saldo);
+    protected float getSaldo() {
+        return this.saldo;
     }
 
+    protected float getSaldoAnterior() {
+        return this.saldoAnterior;
+    }
 }

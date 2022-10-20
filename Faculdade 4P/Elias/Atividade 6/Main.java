@@ -2,78 +2,119 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int op = 0;
         Scanner entrada = new Scanner(System.in);
-        Banco b = new Banco();
-        Contas contas;
-        int nConta = 0;
         ContaCorrente contaCorrente;
         ContaPoupanca contaPoupanca;
-        int aux = 0;
+        Banco banco = new Banco();
+        int op;
+        int taxaServico;
+        int nConta;
+        int nContaTransferencia;
+        int aux;
+
+        System.out.println("Informe a taxa de serviço");
+        taxaServico = entrada.nextInt();
 
         do {
             System.out.println("1- Cadastrar Conta Corrente");
             System.out.println("2- Cadastrar Conta Poupança");
-            System.out.println("3- Entrar na conta");
+            System.out.println("3- Utilizar Conta Corrente");
+            System.out.println("4- Utilizar Conta Poupança");
+            System.out.println("5- Exibir saldo das contas");
             System.out.println("0- Sair");
             op = entrada.nextInt();
-
             switch (op) {
-
                 case 1:
-                    contaCorrente = new ContaCorrente();
-                    nConta = b.novaConta(contaCorrente);
-                    System.out.print("Sua conta é -> " + b.getnConta());
-                    System.out.println("Saldo -> " + b.saldo(nConta));
+                    contaCorrente = new ContaCorrente(taxaServico);
+                    nConta = banco.criarConta(contaCorrente);
+                    System.out.println("Conta Corrente de numero " + nConta + " foi criada!");
                     break;
-                
                 case 2:
-                    contaPoupanca = new ContaPoupanca();
-                    nConta = b.novaConta(contaPoupanca);
-                    System.out.print("Sua conta é -> " + b.getnConta());
-                    System.out.println("Saldo -> " + b.saldo(nConta));
+                    contaPoupanca = new ContaPoupanca(taxaServico);
+                    nConta = banco.criarConta(contaPoupanca);
+                    System.out.println("Conta Poupança de numero " + nConta + " foi criada!");
                     break;
-                
                 case 3:
-                    System.out.print("Informe o numero da sua conta-> ");
+                    System.out.println("Informe o numero da Conta Corrente");
                     nConta = entrada.nextInt();
-                    System.out.println("\n");
-                    System.out.println("=========================\n\n");
-                        do {
-                            
-                            System.out.println("1- Depositar");
-                            System.out.println("2- Sacar");
-                            System.out.println("3- Visualizar Saldo");
-                            System.out.println("0- Sair");
-                            System.out.print("Informe -> ");
-                            op = entrada.nextInt();
-                            entrada.nextLine();
-                            switch (op) {   
-                                
-                                case 1:
-                                System.out.print("Informe o valor do deposito-> ");
-                                contas.Deposito(entrada.nextFloat(), nConta);
+                    do {
+                        System.out.println("1- Sacar");
+                        System.out.println("2- Transferir");
+                        System.out.println("3- Exibir saldo");
+                        System.out.println("4- Depositar");
+                        System.out.println("0- Sair");
+                        op = entrada.nextInt();
+                        switch (op) {
+                            case 1:
+                                System.out.println("Informe o valor que deseja sacar.");
+                                aux = entrada.nextInt();
+                                banco.sacar(nConta, aux);
                                 break;
-                                case 2:
-                                System.out.print("Informe o valor para sacar-> ");
-                                contas.Sacar(entrada.nextFloat());
+                            case 2:
+                                System.out.println("Informe o valor que deseja transferir.");
+                                aux = entrada.nextInt();
+                                System.out.println("Informe o numero da conta");
+                                nContaTransferencia = entrada.nextInt();
+                                banco.transferir(nConta, aux, nContaTransferencia);
                                 break;
-                                case 3:
-                                System.out.println("Saldo atual de " + contas.getSaldo());
+                            case 3:
+                                banco.saldoConta(nConta);
                                 break;
-                                
-                                default:
-                                System.out.println("Informe corretamente");
+                            case 4:
+                                System.out.println("Informe o valor que deseja depositar.");
+                                aux = entrada.nextInt();
+                                banco.depositar(nConta, aux);
                                 break;
-                            }
-                        } while (op != 0);
+                        }
+                    } while (op != 0);
+                    op = 1;
                     break;
-            
-                default:
-                        System.out.println("Informe corretamente");
+                case 4:
+                    System.out.println("Informe o numero da Conta Poupança");
+                    nConta = entrada.nextInt();
+                    do {
+                        System.out.println("1- Sacar");
+                        System.out.println("2- Transferir");
+                        System.out.println("3- Exibir saldo");
+                        System.out.println("4- Render");
+                        System.out.println("5- Depositar");
+                        System.out.println("0- Sair");
+                        op = entrada.nextInt();
+                        switch (op) {
+                            case 1:
+                                System.out.println("Informe o valor que deseja sacar.");
+                                aux = entrada.nextInt();
+                                banco.sacar(nConta, aux);
+                                break;
+                            case 2:
+                                System.out.println("Informe o valor que deseja transferir.");
+                                aux = entrada.nextInt();
+                                System.out.println("Informe o numero da conta");
+                                nContaTransferencia = entrada.nextInt();
+                                banco.transferir(nConta, aux, nContaTransferencia);
+                                break;
+                            case 3:
+                                banco.saldoConta(nConta);
+                                break;
+                            case 4:
+                                banco.render(nConta);
+                                break;
+                            case 5:
+                                System.out.println("Informe o valor que deseja depositar.");
+                                aux = entrada.nextInt();
+                                banco.depositar(nConta, aux);
+                                break;
+                        }
+                    } while (op != 0);
+                    op = 1;
+                    break;
+                case 5:
+                    banco.exibirSaldoContas();
                     break;
             }
-
         } while (op != 0);
+
+        entrada.close();
     }
+
 }
