@@ -1,9 +1,0 @@
-1- a) public: permite acesso a qualquer código externo a classe.
-b)é um modificador um pouco menos restritivo que o private. Este tipo de modificador é aplicado a todas as classes, atributos ou métodos, os quais, não tiveram o seu modificador explicitamente declarado
-c) É um método que não pode ser sobrescrito nas subclasses. Use para garantir que um determinado algoritmo não possa ser modificado pelas subclasses
-d) classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”
-
-2-a) private define que somente a propria classe pode acessalo.
-b) public define que pode ser acessado por qual quer um de qual quer lugar.
-c) protected define que so pode ser acessado pelos pacotes e subclasses.
-d) default define que so pode ser acessado pelos pacotes

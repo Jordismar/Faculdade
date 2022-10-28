@@ -1,0 +1,20 @@
+01 – Em relação aos modificadores que podem ser utilizados em classes,
+ explique cada um deles:
+a) public é o modificador menos restritivo de todos os demais. 
+    Declarando classes, atributos ou métodos com este modificador, 
+    automaticamente dizemos que aquela propriedade é acessível a partir 
+    de qualquer outra classe.
+b) friendly é um modificador um pouco menos restritivo que o private. 
+    Este tipo de modificador é aplicado a todas as classes, atributos ou 
+    métodos, os quais, não tiveram o seu modificador explicitamente 
+    declarado.
+c) final é um modificador que define que a classe não pode ser extentida.
+d) abstract é um modificador que define que uma classe não pode ser 
+    instanciada.
+
+02 – Em relação aos seguintes modificadores, como eles impactam quando 
+    aplicados a atributos e métodos?
+a) private define que somente a propria classe pode acessalo.
+b) public define que pode ser acessado por qual quer um de qual quer lugar.
+c) protected define que so pode ser acessado pelos pacotes e subclasses.
+d) default define que so pode ser acessado pelos pacotes
