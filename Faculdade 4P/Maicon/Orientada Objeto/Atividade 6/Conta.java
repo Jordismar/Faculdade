@@ -6,7 +6,7 @@ public abstract class Conta {
 
     public abstract void abrirConta();
 
-    public abstract float informarSaldo();
+    public abstract float exibirSaldo(int nConta);
 
     public int getConta() {
         return this.conta;
