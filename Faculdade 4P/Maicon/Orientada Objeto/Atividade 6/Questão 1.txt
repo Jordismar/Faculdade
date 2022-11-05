@@ -1,0 +1,3 @@
+1- a) É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.
+
+b) Um método abstrato representa uma função que deve ser herdada e implementada nas classes filhas, mas ele originalmente não possui corpo na classe mãe. Ou seja, na classe mãe ele é apenas uma assinatura, indicando que cabe às classes filhas a definição de como ele deve funcionar.
