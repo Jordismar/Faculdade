@@ -1,0 +1,17 @@
+1 - PC: enderço atual da instrução.
+    Memoria: função que sera executada e encontrar os valores.
+    RI e RD: armazena o dado lido da memoria.
+    A e B: armazena o operado lido no registradores.
+    SaidaALU: armazena saida da ALU
+    informa nova execução pro PC
+
+2 - A ALU, BR e a Memoria, não podem ser utilizadas ao mesmo momento. 
+    Quando e realizado o acesso a um deles e passado para o proximo, e
+    a instrução sera interrompida e da inicio ao novo ciclo de clock.
+
+3 - Não. O multiciclo a memoria e somadores sao utilizados somente um
+    de cada vez por instrução, podendo ser usados separadamente por instruções
+    diferentes.
+
+4 - diminui muito o tempo de ociosidade, por poderem usar suas etapas de
+    ciclo quando não ocupadas pela proxima instrução.

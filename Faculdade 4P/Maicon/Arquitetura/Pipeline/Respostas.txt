@@ -1,0 +1,5 @@
+1 - Uma delas e atrasar o inicio do processamento da proxima instrução ate que não acha 
+    conflito outra seria iniciar o processamento das proxima instrução a medida que as 
+    etapas de processamento vão se desocupando.
+2 - A principal diferença e que os nucleos fisicos possuem ALU, e os nucleos virtuais possuem
+    registrador de intrução, registrador de dados da memoria, A e B.

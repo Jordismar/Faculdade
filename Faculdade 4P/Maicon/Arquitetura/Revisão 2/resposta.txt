@@ -1,0 +1,36 @@
+1- Levando em consideração que a hierarquia de memória se define como 1° BR, 2° Cache, 3° RAM, 4° HD/SSD, as memórias DRAM ficam na 3° posição, onde fica as memórias RAM, e as memórias SRAM podem ser tanto a memória cache e banco de registradores que ocupam a 2° e 1° posição, respectivamente.
+
+2- 1° Banco de Registradores(BR)-> Um banco de registradores é um componente digital composto por um conjunto de registradores que podem ser acessados de forma organizada. De uma maneira geral, podem ser executadas operações de leitura dos dados anteriormente gravados e de escrita de dados para modificar as informações internas.
+2° Memória Cache-> Ela armazena dados, informações e processos temporários que são usados com frequência a fim de agilizar os processos que o usuário requisitar
+3° Memória RAM-> Ela armazena informações a fim de executar o funcionamento de uma aplicação requisitada para o usuário
+4° HD/SSD-> Armazena arquivos, programas, jogos, fotos, vídeos pelo tempo que precisar a fim de que quando requisitados, sejam exibidos para o usuário.
+ 
+3-  Tipo R - OP(6) são os operadores ADD, ADDi, SUB.
+        RS(5) e RT(5) são os endereços de onde estão as variáveis.
+        RD(5) é o registrador de destino de onde vai ser armazenado.
+        Shant(5) é o registrador que desvia o caminho da variável. Ex: JUMP.
+        Funct(6) é a função que você vai invocar o que realmente você vai fazer. Ex: SLT.
+    Tipo I- OP(6) são os operadores
+        RS(5) são os endereços de onde estão as variáveis.
+        RT(5) é o registrador de destino de onde vai ser armazenado.
+    Constante(16) Representa o número imediato que ele vai te retornar. Ex: ADDi, SUBi. 
+    Tipo J- OP(6) são os operadores
+        (26) são os endereços da variáveis
+        Ex: Jump
+ 
+4- Não, a questão de o processador ser 64 bits ou de 32 bits, não altera o tempo diretamente, porém, amplia a quantidade de memória que pode ser usada nesse computador, na de 32 bits, são suportados 4gb de RAM, fazendo com que tecnicamente limite a velocidade.
+
+5- Torne o caso comum mais rápido-> Significa que tornando a instrução que se repete mais vezes mais rápido, você gerencia melhor a temperatura do processador.
+A simplicidade favorece a regularidade-> Significa que se pegarmos os casos que tem mais o menos o mesmo tempo de execução e organizarmos de modo que você possa pegar uma quantidade de instruções grandes e depois uma pequena, você controla a temperatura do processador e evita deixar o processador muito ocioso.
+
+6- Se for apenas uma instrução, não há diferença entre os dois processadores, eles se tornam mais rápido quando são mais de uma instrução, pois o multiciclo com pipeline gerencia melhor várias instruções.
+
+7- a) Add -> PC+ULA+PC / PC+MEM+TMP / TMP +BR+TMP / TMP+ULA+TMP / TMP + BR
+   b) LW-> PC+ULA+PC / PC+MEM+TMP / TMP+BR
+   c) SW-> PC+ULA+PC / PC+MEM+TMP / TMP+BR+TEMP / TEMP+MEM
+   d) AND-> PC+ULA+PC / PC+MEM+TEMP / TEMP+BR+TEMP / TEMP+ULA+TEMP /TEMP+BR
+   e) ORi-> PC+ULA+PC / PC+MEM+TEMP/ TEMP+BR+TEMP/ TEMP+ULA+TEMP/ TEMP+BR
+   f) BEQ-> PC+ULA+PC / PC+MEM+TMP / TMP+BR+TEMP / TEMP+ULA+PC
+   g) BNE-> PC+ULA+PC / PC+MEM+TMP / TMP+BR+TEMP / TEMP+ULA+PC
+   h) J-> PC+ULA+PC / PC+MEM+TMP / TEMP+ULA+PC
+   i) SLT-> PC+ULA+PC / PC+MEM+TMP / TMP+BR+TEMP / TEMP+ULA+TEMP / TEMP+BR
