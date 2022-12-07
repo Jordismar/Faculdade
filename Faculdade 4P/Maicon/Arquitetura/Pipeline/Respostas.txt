@@ -3,3 +3,30 @@
     etapas de processamento vão se desocupando.
 2 - A principal diferença e que os nucleos fisicos possuem ALU, e os nucleos virtuais possuem
     registrador de intrução, registrador de dados da memoria, A e B.
+
+3 - 
+   	CICLOS	    1	        2	        3	        4	        5	        6	        7	        8	        9	        10				
+INSTRUCOES															
+ADD		    PC+ULA+PC	PC+M+TMP	TMP+BR+AB	AB+ULA+SU	SU+BR									
+LW			            PC+ULA+PC	PC+MEM+TMP	TMP+BR										
+BNE				                    PC+ULA+PC	PC+M+TMP	TMP+BR+AB	AB+ULA+PC								
+SLT					                            PC+ULA+PC	PC+MEM+TMP	TMP+BR+AB	AB+ULA+SU	SU+BR						
+J							                                            PC+ULA+PC	PC+M+TMP	TEMP+ULA+PC						
+SUB										                                                                    PC+ULA+PC	  PC+TMP+M	TMP+BR+AB	AB+ULA+SU	SU+BR	
+AND												                                                                                    PC+ULA+PC	TMP+BR+AB	AB+ULA+SU	SU+BR
+															
+															
+															
+4 -															
+															
+						PIPELINE									
+															
+	CICLOS	    1	        2	        3	        4	        5	        6	        7	        8	        9	        10				
+INSTRUCOES															
+ADD		    PC+ULA+PC	PC+M+TMP	TMP+BR+AB	AB+ULA+SU	SU+BR									
+LW			            PC+ULA+PC	PC+MEM+TMP	TMP+BR										
+BNE				                    PC+ULA+PC	PC+M+TMP	TMP+BR+AB	AB+ULA+PC								
+SLT					                            PC+ULA+PC	PC+MEM+TMP	TMP+BR+AB	AB+ULA+SU	SU+BR						
+J							                                            PC+ULA+PC	PC+M+TMP	TEMP+ULA+PC						
+SUB										                                                                    PC+ULA+PC	  PC+TMP+M	TMP+BR+AB	AB+ULA+SU	SU+BR	
+AND												                                                                                    PC+ULA+PC	TMP+BR+AB	AB+ULA+SU	SU+BR
