@@ -1,0 +1,30 @@
+1-
+    Interface com o Usuário:
+        É uma parte fundamental de um software; é a parte do sistema visível para o usuário, através da qual, ele se comunica para realizar suas tarefas.
+
+    Execução de Programas:
+        O sistema operacional é o responsável pelo carregamento dos programas na memória principal da máquina e executá-los. O programa é o responsável pelo término de sua própria execução;
+
+    Operações de E/S:
+        Durante a sua execução, um programa pode ter necessidade de se comunicar com meios externos à máquina. Esta operação recebe o nome de entrada/saída (E/S) - input/output (I/O) e pode envolver qualquer dispositivo de E/S (monitor, teclado). Como um programa não pode executar estas operações diretamente, o sistema operacional é o responsável por fornecer meios adequados para isso;
+
+    Manipulação de Sistema de Arquivos
+        Os usuários de uma máquina têm necessidade de realizar acessos aos arquivos pelo nome para saber se eles existem, para apagá-los ou até para renomeá-los. Um programa em execução necessita realizar a leitura ou escrita de um arquivo qualquer. O sistema operacional é o responsável por gerenciar o sistema de arquivos da máquina. Este gerenciamento inclui a alocação de espaço no dispositivo de armazenamento (disco rígido), a busca otimizada a um determinado arquivo e o armazenamento de todas as informações necessárias sobre cada arquivo.
+
+    Comunicação entre processos:
+        É o grupo de mecanismos que permite aos processos transferirem informação entre si. A execução de um processo pressupõe por parte do sistema operativo, entre outras coisas, a criação de um contexto de execução próprio que, de certa forma, abstrai o processo dos componentes reais do sistema. Devido a esta virtualização dos recursos, o processo não tem conhecimento acerca dos outros processos e, como tal, não consegue trocar informação.
+
+    Detecção/prevenção de Erros:
+        O sistema operacional é o responsável por detectar erros possíveis que podem comprometer a execução de qualquer programa e a segurança da máquina. Esses erros podem envolver o próprio processador, a memória principal (acesso a uma área proibida), os dispositivos de entrada/saída (falta de papel na impressora), ou até mesmo o programa do usuário (uma divisão por zero). Para cada tipo de erro, o sistema operacional tem uma ação apropriada para garantir a exatidão e a consistência do processo de execução.
+
+    Alocação de Recursos
+        O sistema operacional é o responsável pela alocação dos diversos recursos em sistemas com um ou mais usuários. Tais recursos incluem a memória principal, o próprio processador (CPU), arquivos e os dispositivos de I/O. A alocação deve ser feita da forma mais eficiente possível para não prejudicar o desempenho do sistema.
+
+    Contabilização:
+        É uma ferramenta que automatiza as atividades operacionais do contador. Com essa centralização dos dados e as demais funcionalidades do sistema, o profissional organiza melhor as informações e tem uma visão geral mais transparente sobre toda a empresa.
+
+2- O kernel é responsável por ser o elo do hardware (parte física) com o software (parte lógica) do computador. Em outras palavras, o principal objetivo é gerenciar o computador e permitir que os aplicativos sejam executados e façam uso dos recursos que a máquina tem. O núcleo também tem que garantir, por exemplo, que a memória RAM seja usada em seu potencial sem risco para o computador
+
+3- Bootstrap. É o processo de inicialização do micro, onde é lido primeiramente o BIOS e em seguida carregado o sistema operacional e programas.
+
+4- Um Escalonador de Processos é um subsistema do Sistema Operacional responsável por decidir o momento em que cada processo obterá a CPU. É utilizado algoritmos de escalonamento que estabelecem a lógica de tal decisão. Nesse momento de decidir qual escalonador será utilizado no sistema operacional, cabe avaliar o cenário que o sistema será utilizado.
