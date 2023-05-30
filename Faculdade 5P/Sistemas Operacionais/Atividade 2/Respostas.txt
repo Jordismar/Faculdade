@@ -1,0 +1,30 @@
+1- O contexto de um processo é o conjunto de elementos físicos ou situacionais que ajudam o receptor da mensagem a compreendê-la. Esses elementos caracterizam o texto, o qual é uma comunicação de ideias expressas por palavras escritas. Em outras palavras, o contexto de um processo é tudo que envolve e influencia a execução do processo em questão.
+
+2- O estado de um processo pode ser alterado em diversas circunstâncias. Por exemplo, para transferir o controle da CPU de um processo para outro, é necessário armazenar o estado do processo antigo e carregar o estado do novo processo, anteriormente armazenado. A essa tarefa se dá o nome de mudança de contexto. Além disso, os estados de um processo podem ser os seguintes: Novo (Criar), Pronto, Executando, Bloqueado e Terminado
+
+3- a) Programa: é uma sequência de instruções codificadas (escritas) a serem executadas pelo computador. Em outras palavras, é um conjunto de instruções que o computador segue para realizar uma tarefa específica.
+
+b) Processo: é um programa em execução. Um processo é composto por um ou mais threads e é responsável por gerenciar recursos do sistema operacional, como memória e CPU2.
+
+c) Thread: é uma sequência de instruções sendo executadas. Uma thread permite que o usuário de um programa utilize uma funcionalidade do ambiente de trabalho enquanto outras linhas de execução realizam outros cálculos e operações.
+
+4- a) Contexto de Software: é o mesmo do processo original. Em outras palavras, é um grupo de informações referentes ao software que o processo está executando.
+
+b) Contexto de Hardware: é um grupo de informações referentes ao hardware. O contexto de thread inclui o conjunto de registros de máquina do thread, a pilha de kernel, um bloco de ambiente de thread e uma pilha de usuário no espaço de endereço do processo do thread.
+
+5- a) Estados de um processo: um processo pode assumir os seguintes estados:
+
+Novo: processo está sendo criado.
+Executando: instruções do processo estão executando.
+Esperando: processo está esperando ocorrência de algum evento.
+Terminado: processo terminou a execução.
+b) Estados de uma thread: uma thread pode assumir os seguintes estados:
+
+Não iniciado: logo após ser criada (antes do Start()).
+Em execução: após ser ativada (Start()) ou após método Resume().
+Suspenso: após método Suspended().
+Bloqueado: quando uma thread está esperando por um monitor lock para entrar em uma seção crítica.
+Terminado: quando a thread termina sua execução.
+As trocas de estado ocorrem em diferentes circunstâncias dependendo do estado atual do processo ou da thread. Por exemplo, um processo pode mudar de “Executando” para “Esperando” quando ele está esperando por algum evento. Já uma thread pode mudar de “Em execução” para “Suspenso” quando o método Suspended() é chamado.
+
+6- O sistema operacional executa um processo como se estivesse executando uma thread porque as threads são mais leves e mais rápidas do que os processos. Além disso, as threads compartilham o mesmo espaço de endereçamento do processo que as criou, o que significa que elas podem acessar as mesmas variáveis e recursos. Isso torna as threads mais eficientes em termos de memória e tempo de execução.

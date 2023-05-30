@@ -1,0 +1,30 @@
+1- Quando um computador é ligado, o processo de inicialização começa com a execução do boot loader, que é um programa armazenado em um chip ROM ou EEPROM que carrega o sistema operacional na memória principal
+
+2- Interrupções são sinais para o processador emitidos por hardware ou software, indicando um evento que precisa de atenção imediata. Elas permitem aos processadores modernos responder a eventos gerados por dispositivos enquanto outro trabalho está sendo realizado.
+
+3-  Execução do programa
+    Operação I / O
+    Manipulação do sistema de arquivos
+    Comunicação
+    Manipulação de erros
+    Gestão de recursos
+
+4- O contexto de um processo é o conjunto de informações que o sistema operacional mantém sobre um processo em execução, como o estado dos registradores da CPU, o valor do contador de programa e outras informações importantes. A troca de um processo por outro é chamada de mudança de contexto e consiste em salvar o conteúdo dos registradores do processo que está deixando a CPU para carregá-los com os valores referentes ao novo processo que será executado
+
+5- A principal diferença entre threads e processos é que as threads compartilham o mesmo espaço de endereçamento do processo pai, enquanto os processos têm seu próprio espaço de endereçamento. Isso significa que as threads podem compartilhar dados entre si mais facilmente do que os processos.
+
+6- O despachante é responsável por selecionar um processo da fila de processos prontos e carregá-lo na memória principal. Ele é responsável por escolher qual processo deve ser executado em seguida e alocar recursos para ele. O despachante é uma parte importante do escalonador de processos e é responsável por garantir que o sistema operacional execute os processos de forma eficiente.
+
+7-a) Utilização da CPU: Este critério é baseado na quantidade de tempo de CPU que um processo já usou. O processo que usou menos tempo de CPU é selecionado para ser executado em seguida.
+
+b) Produtividade (Throughput): Este critério é baseado na quantidade de trabalho que um processo realiza durante um determinado período de tempo. O processo que realiza mais trabalho é selecionado para ser executado em seguida.
+
+c) Tempo de Processamento (Turnaround): Este critério é baseado no tempo que um processo leva para ser concluído desde o momento em que é enviado para o sistema até o momento em que é concluído. O processo que leva menos tempo para ser concluído é selecionado para ser executado em seguida.
+
+d) Tempo de Espera: Este critério é baseado no tempo que um processo passa esperando na fila de processos prontos. O processo que passou mais tempo esperando é selecionado para ser executado em seguida.
+
+e) Tempo de Resposta: Este critério é baseado no tempo que um processo leva para obter sua primeira resposta do sistema. O processo que leva menos tempo para obter sua primeira resposta é selecionado para ser executado em seguida.
+
+8- Multiplas filas -> Menor Job Primeiro (SJF) -> Escalonamento por Prioridade -> Alocação Circular – Round Robin (RR) -> Primeiro a Chegar, Primeiro a ser Servido (FCFS)
+
+9-

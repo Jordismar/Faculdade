@@ -1,0 +1,17 @@
+1- Pois isso pode levar a uma perda de desempenho do sistema, por conta de um aumento no tempo de acesso ao arquivo.
+
+2- Um arquivo simples contém apenas texto ou dados simples e acaba sendo fácil de entender e editar. Por outro lado, um arquivo complexo contém vários tipos de dados, como imagens, gráficos e tabelas, portanto são mais difíceis de entender e editar.
+
+3- Modo de acesso: indica se o arquivo está aberto para leitura, gravação ou ambos.
+   Posição do ponteiro: indica a posição atual do ponteiro de arquivo.
+   Tamanho do buffer: indica o tamanho do buffer de leitura/gravação.
+   Contador de bytes lidos/gravados: indica quantos bytes foram lidos ou gravados até o momento
+
+4- Quando um arquivo é aberto simultaneamente por processos diferentes, o sistema operacional deve garantir que os processos não interfiram uns nos outros. Para isso, o sistema operacional mantém uma tabela de arquivos abertos por processo (TAAP) que contém informações sobre os arquivos abertos por cada processo. Os riscos de abrir um mesmo arquivo simultaneamente por processos diferentes incluem inconsistência de dados e perda de dados. Para evitar esses riscos, o sistema operacional deve garantir que os processos não escrevam no mesmo arquivo ao mesmo tempo. Isso pode ser feito através do uso de semáforos.
+
+5- A semelhança é que eles podem ser acessados atraves de um caminho
+A diferença é que os arquivos são unidades de dados individuais que contêm informações armazenadas em um formato específico. Diretórios são estruturas de organização de arquivos que permitem o agrupamento de arquivos que se relacionam de alguma forma
+
+6- Eles ainda estavam fisicamente presentes no disco, contudo, eles não estavam disponíveis para acesso até que o sistema de arquivos fosse montado.
+
+7- Evitar conflitos e ambiguidades. Se dois arquivos tiverem o mesmo nome, o sistema operacional não saberá qual arquivo o usuário está tentando acessar. Seria possível permitir que dois arquivos tenham o mesmo nome em um único diretório, mas isso pode levar a problemas de ambiguidade e confusão.

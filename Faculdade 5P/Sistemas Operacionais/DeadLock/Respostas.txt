@@ -1,0 +1,29 @@
+1- a) Exclusão Mútua: Um recurso só pode ser usado por um processo de cada vez.
+
+b) Posse e Espera: Um processo que já está segurando pelo menos um recurso pode solicitar recursos adicionais e esperar que eles sejam liberados por outros processos.
+
+c) Inexistência de preempção: Os recursos concedidos não podem ser forçosamente tomados de um processo que os possui.
+
+d) Espera circular: Dois ou mais processos estão esperando uns pelos outros para liberar recursos.
+
+2- Um estado seguro é aquele em que existe uma sequência de eventos que garanta que todos os processos possam ser concluídos, mesmo nesta situação a ocorrência de deadlocks é inevitável
+
+3- Para identificar a existência de um deadlock, é possível analisar um grafo orientado relacionando processos, recursos e instâncias dos recursos. O deadlock pode ser representado na forma de grafos dirigidos, onde o processo é representado por um quadrado e o recurso por um círculo. Quando um processo solicita um recurso, uma seta é dirigida do quadrado ao círculo. Quando um recurso é alocado a um processo, uma seta é dirigida do círculo ao quadrado.
+
+4- a) Impedir a ocorrência de deadlocks: essa estratégia consiste em evitar que as condições necessárias para a ocorrência de deadlock sejam satisfeitas. Para isso, é necessário que o sistema possua informações suficientes sobre os recursos que serão utilizados pelos processos e que seja capaz de prever um estado futuro do sistema que possa ocasionar o deadlock.
+
+b) Permitir que o deadlock ocorra e resolvê-lo: essa estratégia consiste em permitir que o deadlock ocorra e, em seguida, resolvê-lo. Para isso, é necessário que o sistema possua informações suficientes sobre os recursos que serão utilizados pelos processos e seja capaz de detectar a ocorrência de deadlock. Uma vez detectado o deadlock, é possível resolvê-lo utilizando técnicas como preempção ou liberação de recursos.
+
+c) Não evitar a ocorrência de deadlock e nem tentar resolvê-lo: essa estratégia consiste em ignorar a ocorrência de deadlock. Essa estratégia é útil se, praticamente, não existe a ocorrência de deadlock.
+
+6- a) Na imagem, é possível identificar um ciclo entre os processos P1, P2, P3 e P4, o que indica que houve um deadlock. 
+
+b) Para impedir que o deadlock ocorra, é possível utilizar técnicas como a prevenção de uma das quatro condições para a ocorrência do deadlock (exclusão mútua, posse e espera, inexistência de preempção e espera circular) ou o uso de algoritmos de prevenção de deadlock, como o algoritmo do banqueiro. 
+
+c) Para corrigir o deadlock, é necessário interromper um ou mais processos envolvidos no ciclo e liberar os recursos que estão sendo mantidos exclusivamente por eles. Essa liberação de recursos pode permitir que os demais processos continuem sua execução e evitar que ocorra um novo deadlock.
+
+7- a) Para impedir que um deadlock ocorra, o sistema operacional pode usar técnicas de prevenção, como o algoritmo do banqueiro, ou de evitar, como a detecção antecipada de recursos que possam causar impasses.
+
+b) Para identificar que um deadlock ocorreu, o sistema operacional pode usar algoritmos de detecção de deadlock, como o algoritmo do caminho crítico ou o algoritmo de detecção de ciclo. Quando um deadlock é identificado, o sistema operacional deve tomar medidas para resolvê-lo.
+
+c) Para recuperar o funcionamento normal após ter ocorrido um deadlock, o sistema operacional pode usar técnicas de recuperação, como a interrupção de processos envolvidos no impasse, a liberação de recursos ou a reinicialização do sistema. A escolha da técnica de recuperação depende do tipo de sistema e da gravidade do deadlock.

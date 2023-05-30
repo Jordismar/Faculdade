@@ -1,0 +1,25 @@
+1- a) A atribuição em tempo de compilação é feita pelo compilador e é a mais rápida das três formas. Porém, ela não permite que o programa seja carregado em qualquer endereço de memória. Além disso, se o programa for carregado em um endereço diferente do previsto, ele não funcionará corretamente.
+
+b) A atribuição em tempo de carga é feita pelo carregador e permite que o programa seja carregado em qualquer endereço de memória. Porém, ela é mais lenta que a atribuição em tempo de compilação.
+
+c) A atribuição em tempo de execução é feita pelo sistema operacional e permite que o programa seja carregado em qualquer endereço de memória. Ela é a mais flexível das três formas, mas também é a mais lenta
+
+2- Carga dinâmica é um processo em que um programa é carregado na memória principal em tempo de execução. Isso permite que o programa seja carregado em qualquer endereço de memória e que novos módulos possam ser adicionados ao programa sem a necessidade de recompilação.
+
+Ligação dinâmica é um processo em que as referências a funções e variáveis ​​são resolvidas em tempo de execução. Isso permite que o programa seja carregado em qualquer endereço de memória e que novos módulos possam ser adicionados ao programa sem a necessidade de recompilação
+
+3- Swapping é um processo em que as páginas de memória são movidas entre a memória principal e o disco rígido. Isso ocorre quando a memória principal está cheia e o sistema operacional precisa liberar espaço para novos processos.
+
+O swapping pode ter implicações negativas no desempenho do sistema, pois o acesso ao disco rígido é muito mais lento do que o acesso à memória principal. Quando o sistema operacional precisa mover uma página de memória para o disco rígido, ele deve primeiro encontrar uma página que não esteja sendo usada e movê-la para o disco rígido. Em seguida, ele pode mover a página necessária da memória principal para o disco rígido. Esse processo é conhecido como troca de página
+
+4- A estratégia First-fit aloca o primeiro bloco de memória grande o suficiente para o processo. A Best-fit aloca o menor bloco de memória que suporte o processo. Já a Worst-fit aloca o bloco de memória maior para o processo que chegar.
+
+Teoricamente, a First-fit é a mais rápida e a Best-fit tem desempenho similar a ela. Já a Worst-fit é a pior em desempenho e velocidade.
+
+5- Paging (Paginação) é um método de gerenciamento de memória usado por sistemas operacionais. O paging permite que a memória principal use dados que residem em um dispositivo de armazenamento secundário. Esses dados são armazenados no dispositivo de armazenamento secundário como blocos de tamanhos iguais chamados páginas.
+
+Swapping é um termo usado para descrever o ato de mover todos os segmentos pertencentes a um processo entre a memória principal e um dispositivo de armazenamento secundário.
+
+A principal diferença entre os dois é que o swapping é o processo de mover todo o processo para o disco rígido, enquanto a paginação é o processo de mover apenas as partes do processo que não estão sendo usadas no momento para o disco rígido
+
+8- Não poís mesmo se separarmos todos eles para caber ficara faltando 4 blocos
